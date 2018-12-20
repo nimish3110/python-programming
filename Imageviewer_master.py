@@ -8,7 +8,7 @@ M = True
 i=0
 while M:
 
-	choice = buttonbox(msg='Which Choclate', title=' ', choices=('Exit', 'Previous', 'Next'), image=path[i])
+	choice = buttonbox(msg='Which file', title=' ', choices=('Exit', 'Previous', 'Next'), image=path[i])
 	if choice == 'Exit':
 		sys.exit(0)
 	if choice == 'Previous':
@@ -16,13 +16,13 @@ while M:
 			continue
 		else:
 			i -= 1
-			choice = buttonbox(msg='Which Choclate', title=' ', choices=('Exit', 'Previous', 'Next'), image=path[i])
+			choice = buttonbox(msg='Which file', title=' ', choices=('Exit', 'Previous', 'Next'), image=path[i])
 	if choice == 'Next':
 		if i >= n:
 			continue
 		else:
 			i+=1
-			choice = buttonbox(msg='Which Choclate', title=' ', choices=('Exit', 'Previous', 'Next'), image=path[i])
+			choice = buttonbox(msg='Which file', title=' ', choices=('Exit', 'Previous', 'Next'), image=path[i])
 
 		
 	
